@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #020236;
+  color: white;
+}
+
+.colors {
+  background-image: linear-gradient(90.87deg, #02FCFF 0%, #4B65F1 50%, #FA03FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  color: transparent;
+}
+
+h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 96%;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+#chatContainer {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 10px 0 0;
+
+}
+
+/* Chat header */
+.chat-header {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.chat-header h2 {
+  margin: 0;
+}
+
+/* Chat messages */
+.chat-messages {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+#messagesList {
+  display: grid;
+  padding: 3px;
+}
+/* Sender message container */
+.senderMessageContainer {
+  justify-self: start;
+  background-color: #1f7bd7;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.senderMessageContainer p {
+  margin: 0;
+}
+
+/* Receiver message container */
+.receiverMessageContainer {
+  justify-self: end;
+  background-color: #2a9c41;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: fit-content;
+
+}
+
+.receiverMessageContainer p {
+  margin: 0;
+}
+
+
+/* Input area */
+.input-area {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.input-area input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin-right: 10px;
+  background-color: transparent;
+
+}
+
+.input-area button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.input-area button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+#inputContainer {
+  display: flex;
+  background-color: transparent;
+  margin-top: 10px;
+}
+input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  padding: 10px 15px;
+}
+
+input[type="text"]:focus-visible{
+  outline: none;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(90.87deg, #02FCFF 0%, #4B65F1 50%, #FA03FF 100%);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  height: 45px;
+  width: 100px;
+}
+
+
