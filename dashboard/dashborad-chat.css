@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.sidebar-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.chat-rooms-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.chat-room-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.chat-room-item.active {
+  background-color: #ebebeb;
+}
+
+.chat-room-item .chat-room-id {
+  margin-left: 10px;
+  font-weight: bold;
+}
+/* Chat container */
+/* Chat container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 10px 0 0;
+
+}
+
+/* Chat header */
+.chat-header {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+.chat-header h2 {
+  margin: 0;
+}
+
+/* Chat messages */
+.chat-messages {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+#messagesList {
+  display: grid;
+}
+/* Sender message container */
+.senderMessageContainer {
+  justify-self: start;
+  background-color: #e2e2e2;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.senderMessageContainer p {
+  margin: 0;
+}
+
+/* Receiver message container */
+.receiverMessageContainer {
+  justify-self: end;
+  background-color: #c5ccc9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: fit-content;
+
+}
+
+.receiverMessageContainer p {
+  margin: 0;
+}
+
+/* Input area */
+.input-area {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.input-area input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.input-area button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

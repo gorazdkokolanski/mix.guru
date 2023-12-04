@@ -1,0 +1,298 @@
+button {
+    cursor: pointer;
+
+
+}
+
+.container {
+    max-width: 1500px;
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+section,
+header,
+footer {
+    width: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #020236;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+header{
+    border-bottom: 1px solid white;
+
+}
+
+.header-container{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding: 15px 0;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    padding-top: 40px;
+}
+
+.dashboard{
+    width: 90%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.search-div{
+    padding: 10px 20px;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+.filter{
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+}
+
+.filter::placeholder{
+    font-size: 18px;
+}
+
+.filter:focus-visible{
+    outline: none;
+}
+
+.orders-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.orders-div>div>div:nth-child(1){
+    width: 25%;
+}
+
+.orders-div>div>div:nth-child(2){
+    width: 8%;
+}
+
+.orders-div>div>div:nth-child(3){
+    width: 8%;
+}
+
+.orders-div>div>div:nth-child(4){
+    width: 38%;
+}
+
+.orders-div>div>div:nth-child(5){
+    width: 15%;
+}
+
+.orders-div>div>div:nth-child(6){
+    width: 12%;
+}
+
+.orders-div>div>div:nth-child(7){
+    width: 5%;
+}
+
+.orders-div>div>div:nth-child(8){
+    width: 10%;
+}
+
+.orders-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 10px 20px;
+}
+
+.order{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid white;
+    padding: 15px 20px;
+}
+
+.addresses{
+    display: flex;
+    flex-direction: column;
+}
+
+.addresses>div{
+    height: 30px;
+}
+
+.distributions{
+    display: flex;
+    flex-direction: column;
+}
+
+.distributions>div{
+    height: 30px;
+}
+
+.transfer-delays{
+    display: flex;
+    flex-direction: column;
+}
+
+.transfer-delays>div{
+    height: 30px;
+}
+
+.dashboard button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 80px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Arial';
+}
+
+.button-container{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+.mixnow {
+    background: radial-gradient(119% 119% at 50% -10%, #02FCFF 0%, #4B65F1 52.83%, #FA03FF 100%),
+        linear-gradient(176.44deg, rgba(255, 255, 255, 0.8) 2.93%, rgba(255, 255, 255, 0) 50.02%);
+    border: none;
+    display: flex;
+    font-size: 18px;
+    height: 50px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.loading-spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    animation: spin 1s linear infinite;
+  }
+  
+  .loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    pointer-events: none;
+  }
+  
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+              transform: rotate(360deg);
+      }
+    }
+  
+  
+    #myDialog {
+      position: fixed;
+      width: 50%;
+      height: 20%;
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    
+    #dialogContent {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    #urlInput {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    #copyBtn {
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    #message {
+      margin-bottom: 10px;
+    }
+    
+    #exitDialogBtn {
+      padding: 5px 10px;
+      background-color: #ccc;
+      color: #000;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    #exitDialogBtn:hover,
+    #copyBtn:hover {
+      opacity: 0.8;
+    }
+    
+  
